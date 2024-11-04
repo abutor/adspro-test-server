@@ -1,8 +1,8 @@
-DECLARE @Password VARCHAR(MAX) = '713BFDA78870BF9D1B261F565286F85E97EE614EFE5F0FAF7C34E7CA4F65BACA';
+DECLARE @Password VARCHAR(MAX) = '713BFDA78870BF9D1B261F565286F85E97EE614EFE5F0FAF7C34E7CA4F65BACA'
 
 INSERT INTO [Users] ([Id], [Username], [Password], [Active])
 VALUES 
-    (NEWID(), 'admin', @Password, 1,
+    (NEWID(), 'admin', @Password, 1),
     (NEWID(), 'adam', @Password, ROUND(RAND(CHECKSUM(NEWID())) * 1, 0)),
     (NEWID(), 'john', @Password, ROUND(RAND(CHECKSUM(NEWID())) * 1, 0)),
     (NEWID(), 'mike', @Password, ROUND(RAND(CHECKSUM(NEWID())) * 1, 0)),

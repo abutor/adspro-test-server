@@ -1,5 +1,5 @@
-CREATE PROCEDURE [dbo].[DeleteUser]
+CREATE PROCEDURE [dbo].[GetUsersCount]
 AS
 BEGIN
 	SELECT COUNT(1) FROM [dbo].[Users]
-END
+END;

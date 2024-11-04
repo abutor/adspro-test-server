@@ -1,4 +1,3 @@
-
 CREATE PROCEDURE [dbo].[GetUser]
 	@UserId uniqueidentifier
 AS
